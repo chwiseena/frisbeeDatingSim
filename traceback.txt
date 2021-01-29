@@ -1,0 +1,24 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 51, in script call
+    call intro
+  File "game/script_intro.rpy", line 183, in script
+    if joinedTheTeam = False:
+SyntaxError: invalid syntax (script_intro.rpy, line 183)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 51, in script call
+    call intro
+  File "game/script_intro.rpy", line 183, in script
+    if joinedTheTeam = False:
+  File "renpy/ast.py", line 1843, in execute
+    if renpy.python.py_eval(condition):
+  File "renpy/python.py", line 2140, in py_eval
+    code = py_compile(code, 'eval')
+  File "renpy/python.py", line 746, in py_compile
+    raise e
+SyntaxError: invalid syntax (script_intro.rpy, line 183)
+
